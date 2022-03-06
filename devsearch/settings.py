@@ -13,6 +13,8 @@ from datetime import timedelta
 from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from devsearch.jhs import YOUR_EMAIL_PASSWORD
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -182,8 +184,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'YOUR-EMAIL'
-EMAIL_HOST_PASSWORD = 'YOUR-EMAIL-PASSWORD'
+EMAIL_HOST_USER = 'jhsoft1@gmail.com'
+EMAIL_HOST_PASSWORD = YOUR_EMAIL_PASSWORD
+# EMAIL_HOST_PASSWORD = '...&'
 
 
 # Static files (CSS, JavaScript, Images)
